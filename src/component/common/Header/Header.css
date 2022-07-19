@@ -1,0 +1,315 @@
+.header {
+  height: 150px;
+}
+.header_logo {
+  background-color: #15c8a0;
+  min-width: 200px;
+}
+.menu_wrapper {
+  width: 100%;
+}
+.head {
+  height: 40px;
+  padding: 0px 50px;
+  color: #1f2230;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 1px solid #dee2e6;
+}
+.menu_wrapper_left {
+  min-width: 65%;
+  white-space: nowrap;
+}
+.head p {
+  margin-top: 15px;
+}
+.menu_wrapper_left .icon {
+  color: #15c8a0;
+  font-size: 13px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.menu_wrapper_right {
+  width: 15%;
+  margin-left: 50px;
+}
+
+.nav {
+  padding: 0 50px;
+  height: 106px;
+}
+
+.list_item {
+  position: relative;
+}
+.list_item:hover > .sub_nav_list {
+  display: block;
+}
+.sub_nav_list {
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  bottom: -205px;
+  width: 215px;
+  display: none;
+  padding-top: 42px;
+}
+.sub_nav_list li {
+  padding: 15px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sub_nav_list li a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+}
+.sub_nav_list li:hover {
+  background-color: #15c8a0;
+}
+.sub_nav_list li:hover > a {
+  color: #fff;
+}
+.list_item i {
+  display: none;
+}
+
+.nav_left {
+  width: 75%;
+}
+.main_nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.list_item::after {
+  content: "";
+  background-color: #15c8a0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  left: 0;
+  transition: all 0.6s ease;
+}
+.list_item:hover::after {
+  width: 100%;
+}
+.nav_right {
+  width: 25%;
+}
+.nav_left a {
+  color: #707876;
+  font-size: 16px;
+  font-weight: 700;
+}
+.srch_btn img {
+  height: 20px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+.donate_btn {
+  color: #fff;
+  background-color: #15c8a0;
+  padding: 10px 20px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.donate_btn:hover {
+  background-color: #1b1e2b;
+  color: #fff;
+}
+.donate_btn span {
+  font-size: 14px;
+}
+.donate_btn .fa-solid {
+  margin-right: 5px;
+  font-size: 12px;
+}
+.phone_details {
+  background-color: #eff5f4;
+  width: 350px;
+  padding: 10px;
+  display: none !important;
+  display: flex;
+}
+
+.chat_icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 10px;
+  float: left;
+}
+.chat_icon .fa-brands {
+  font-size: 25px;
+  color: #15c8a0;
+  text-align: center;
+}
+.phone_details p {
+  font-size: 14px;
+  color: #707876;
+  font-weight: 800;
+}
+
+.phone_details a {
+  font-weight: 800;
+  font-size: 19px;
+}
+.list_toggle {
+  font-size: 22px;
+  display: none;
+}
+.nav_footer {
+  margin: 0 15px;
+  display: none;
+}
+.mobile_view .nav_logo img {
+  margin-left: 20px;
+  display: none;
+}
+.nav_contact {
+  flex-direction: column;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.nav_contact i {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  background-color: #15c8a0;
+  padding: 10px;
+  border-radius: 50%;
+}
+.nav_icons .social_links a {
+  color: #15c8a0;
+  margin-right: 25px;
+  font-size: 18px;
+}
+.cancel_btn h5 {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .nav_left {
+    display: none;
+  }
+  .list_toggle {
+    display: block;
+  }
+  .nav_right {
+    width: 70%;
+  }
+  .phone_details {
+    display: block !important;
+    margin: 0 15px;
+  }
+  .mobile_view {
+    position: fixed;
+    background-color: #1f2230;
+    height: 100vh;
+    width: 350px;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease;
+  }
+
+  .mobile_view .main_nav {
+    margin-top: 10px;
+    padding: 10px 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile_view li {
+    width: 100%;
+    margin: 10px 15px;
+  }
+  .mobile_view a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  .mobile_view .sub_nav_list {
+    position: relative;
+    top: 0;
+    left: 35px;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+  }
+  .mobile_view .sub_nav_list a {
+    color: #fff;
+  }
+  .mobile_view .list_item i {
+    display: block;
+    border: none;
+    background-color: #15c8a0;
+    color: #fff;
+    padding: 10px 12px;
+    font-size: 14px;
+    float: right;
+  }
+  .mobile_view .nav_logo img {
+    display: block;
+  }
+  .mobile_view .nav_footer {
+    display: block;
+    margin-left: 20px;
+  }
+  .mobile_view .cancel_btn h5 {
+    display: block;
+    color: #707876;
+    font-size: 40px;
+    text-align: end;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  .menu_wrapper_right {
+    display: none;
+  }
+  .menu_wrapper_left {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .head {
+    display: none !important
+    ;
+  }
+  .phone_details {
+    display: none !important;
+  }
+  .menu_wrapper_bottom {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .nav {
+    width: 100%;
+  }
+  .nav_right {
+    width: 40%;
+  }
+  
+}
+@media (max-width:575px) {
+.header{
+  flex-direction: column;
+}
+.header_logo{
+  padding: 10px 0px;
+}
+.nav{
+  padding-bottom: 27px;
+}
+
+}

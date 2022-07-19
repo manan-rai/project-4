@@ -1,0 +1,95 @@
+.community_top {
+  background: url(/public/img/join-one-bg.18ca67da.jpg) fixed;
+  padding: 150px 0px;
+  background-position: center;
+  position: relative;
+  filter: grayscale(50%);
+}
+.community_top::before {
+  content: "";
+  background-color: rgba(31, 34, 48, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.community_top .section_title {
+  z-index: 999;
+}
+.community_top .section_title h1 {
+  color: #fff;
+}
+.community_card {
+  width: 100%;
+  padding: 60px 20px;
+  position: relative;
+}
+.community_card::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(/public/img/three-boxes-img-1.651d35b8.jpg) no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+}
+.community_card .card_img {
+  width: 80px;
+  height: 80px;
+  margin-top: 40px;
+  filter: grayscale(1) invert(1);
+}
+.community_card .paragraph {
+  margin: 30px 0px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.content_title h1 {
+  font-size: 29px;
+  font-weight: 800;
+  color: #fff;
+  height: 50px;
+  
+}
+.community_card .donate_btn{
+  border: 0;
+  color: #000;
+  background-color: #fff;
+  padding: 15px 25px;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.donate_button .fa-heart {
+  margin-right: 10px;
+}
+.community_card:nth-child(1) {
+  background-color: #15c8a0;
+  z-index: 99;
+}
+.community_card:nth-child(2) {
+  background-color: rgba(235, 173, 35, 0.9);
+}
+.community_card:nth-child(3) {
+  background-color: rgba(206, 81, 64, 0.9);
+}
+
+
+@media screen and (max-width: 991px){
+.community_bottom{
+  display: block;
+}
+.community_card .paragraph{
+  margin: 0px 0px 30px 0px;
+}
+.community_card{
+  padding-left:40px;
+}
+}
